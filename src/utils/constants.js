@@ -2,7 +2,7 @@ import Cookies from "js-cookie";
 
 export const baseURL =
   process.env.NODE_ENV === "production"
-    ? "https://personarise-api.herokuapp.com/api"
+    ? "https://personarise-api.onrender.com/api"
     : "http://localhost:5000/api";
 
 

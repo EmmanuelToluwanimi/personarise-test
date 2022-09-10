@@ -21,7 +21,7 @@ export const login = async (data) => {
 export const register = async (data) => {
 
     try {
-        const res = await api.post('/auth/register', data);
+        const res = await api.post('/auth/signup', data);
         const token = res.data.data?.accessToken;;
         setCookie("x-token", token, 1);
         localStorage.setItem("user", JSON.stringify(res.data.data));
